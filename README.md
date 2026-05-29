@@ -1,67 +1,37 @@
-# ScottsTechX-ffmpeg
+# 🎬 ScottsTechX ffmpeg
 
-🛠️ Simple CLI Tool | Part of ScottsTechX Tool Suite
+<p align="center">
+  <img src="https://img.shields.io/badge/ffmpeg-AV-Converter-00ff88?style=for-the-badge&logo=ffmpeg&logoColor=white" alt="ffmpeg"/>
+  <img src="https://img.shields.io/badge/Open-Source-00ff88?style=for-the-badge&logo=github&logoColor=black" alt="Open Source"/>
+</p>
 
----
-
-## About
-
-**Audio/video converter - convert formats, record, stream media**
-
-Official ScottsTechX tool repo — part of the [ScottsTechX Tool Installer](https://github.com/fredscottsbulls/ScottsTechX-Tool-Installer) suite.
-
-**Official Website:** https://ffmpeg.org
+> **Audio/video converter — convert formats, record, stream, and process multimedia.**
 
 ---
 
-## Quick Install
+## ⚡ What It Does
 
-### Via ScottsTechX Tool Installer:
+ffmpeg converts between formats, records audio/video, streams media, and processes multimedia files from the command line.
+
+## 🚀 Quick Usage
 
 ```bash
-scotts-techx install ffmpeg
+# Convert video to MP4
+ffmpeg -i input.avi output.mp4
+
+# Extract audio
+ffmpeg -i video.mp4 -vn audio.mp3
+
+# Record screen
+ffmpeg -f x11grab -i :0.0 output.mp4
+
+# Stream live
+ffmpeg -i input.mp4 -f mpegts udp://localhost:2389
+
+# Compress video
+ffmpeg -i input.mp4 -crf 23 output.mp4
 ```
 
-### Manual Install:
-
-```bash
-# Linux/macOS/Git Bash
-curl -fsSL https://raw.githubusercontent.com/fredscottsbulls/ScottsTechX-ffmpeg/main/install.sh | bash
-
-# Windows PowerShell
-irm https://raw.githubusercontent.com/fredscottsbulls/ScottsTechX-ffmpeg/main/install.ps1 | iex
-```
-
 ---
 
-## What is FFMPEG?
-
-Audio/video converter - convert formats, record, stream media.
-
-For full documentation: https://ffmpeg.org
-
----
-
-## ScottsTechX Tool Suite (30 tools)
-
-| Category | Tools |
-|----------|-------|
-| Simple CLI | nmap, curl, wget, jq, git, python3, ffmpeg, traceroute, netcat, openssh |
-| Pentesting | hydra, sqlmap, nikto, hashcat, gobuster, searchsploit, masscan, burpsuite, ncat, Responder |
-| DevOps | docker, vim, htop, tmux, tar, make, openssl, ansible, kubectl, terraform |
-
-**[View Full Suite](https://github.com/fredscottsbulls/ScottsTechX-Tool-Installer)**
-
----
-
-## Disclaimer
-
-**For authorized use only.** Unauthorized access to computer systems is illegal.
-
----
-
-<div align="center">
-
-**ScottsTechX** | Fred Scotts | https://github.com/fredscottsbulls
-
-</div>
+MIT © 2026
